@@ -21,14 +21,14 @@
 
     <!-- script
     ================================================== -->
-    <script src="js/modernizr.js"></script>
+    <script src="{% static 'js/modernizr.js' %}"></script>
 
     <!-- favicons
     ================================================== -->
     <link rel="apple-touch-icon" sizes="180x180" href="{% static 'le-touch-icon.png' %}">
     <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon-32x32.png' %}">
     <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon-16x16.png' %}">
-    <link rel="manifest" href="site.webmanifest">
+    <link rel="manifest" href="{% static 'site.webmanifest' %}">
 
 </head>
 
@@ -51,7 +51,7 @@
 
         <div class="header-logo">
             <a class="site-logo" href="index.html">
-                <img src="{% static 'images/logo.svg' %}" alt="Homepage">
+                <img src="{% static 'images/aoc-logo1.svg' %}" alt="Homepage">
             </a>
         </div>
 
@@ -76,7 +76,7 @@
         <div class="gradient-overlay"></div>
         <div class="row page-header__content">
             <div class="column">
-                <h1>We Are Hesed</h1>
+                <h1>We Are Ambassadors Of Christ.</h1>
             </div>
         </div>
 
@@ -269,7 +269,7 @@
                                 <img src="{% static 'images/avatars/user-01.jpg' %}" alt="">
                             </div>
                             <h4 class="church-staff__name">
-                                Jonathan Doe
+                                Dasilva Ibilola Victoria
                                 <span class="church-staff__position">
                                     Lead Pastor
                                 </span>
@@ -287,12 +287,12 @@
                     <div class="column church-staff__item">
                         <div class="church-staff__header">
                             <div class="church-staff__picture">
-                                <img src="{% static 'images/avatars/user-02.jpg' %}" alt="">
+                                <img src="{% static 'images/avatars/toyin.jpg' %}" alt="">
                             </div>
                             <h4 class="church-staff__name">
-                                Jane Doe
+                                Toyin Owonubi
                                 <span class="church-staff__position">
-                                    Lead Pastor
+                                    Teens Coordinator
                                 </span>
                             </h4>
                         </div>
@@ -311,9 +311,9 @@
                                 <img src="{% static 'images/avatars/user-03.jpg' %}" alt="">
                             </div>
                             <h4 class="church-staff__name">
-                                Charles Spurgeon
+                                Chika Chuks
                                 <span class="church-staff__position">
-                                    Associate Pastor
+                                    Associate Teens Coordinator
                                 </span>
                             </h4>
                         </div>
@@ -331,17 +331,17 @@
                                 <img src="{% static 'images/avatars/user-04.jpg' %}" alt="">
                             </div>
                             <h4 class="church-staff__name">
-                                Martin Luther
+                                Olajide Shola
                                 <span class="church-staff__position">
-                                    Associate Pastor
+                                    Associate Teens Coordinator
                                 </span>
                             </h4>
                         </div>
     
                         <p>
-                        Cupiditate amet laboriosam ratione at et veritatis quo et explicabo. 
-                        Illum nostrum voluptatem dignissimos laudantium. Et veniam qui. 
-                        Pariatur totam maiores. Quis et consequatur eum nesciunt rerum.
+                            When you give the devil attention he will give you direction.
+                            The amount of Gods word in your life will determine how problem will bow for you.
+                            When God's matter does not matter to you, your matter will not be a matter to God.
                         </p>
                     </div>
 
@@ -351,9 +351,9 @@
                                 <img src="{% static 'images/avatars/user-05.jpg' %}" alt="">
                             </div>
                             <h4 class="church-staff__name">
-                                John Wesley
+                                Esema Samuel
                                 <span class="church-staff__position">
-                                    Youth Pastor
+                                    Teens President
                                 </span>
                             </h4>
                         </div>
@@ -368,12 +368,12 @@
                     <div class="column church-staff__item">
                         <div class="church-staff__header">
                             <div class="church-staff__picture">
-                                <img src="{% static 'images/avatars/user-06.jpg' %}" alt="">
+                                <img src="{% static 'images/avatars/stephanie.jpg' %}" alt="">
                             </div>
                             <h4 class="church-staff__name">
-                                Aimee Semple McPherson
+                                Joseph Stephanie
                                 <span class="church-staff__position">
-                                    Kids Church Director
+                                    Teens Vice President
                                 </span>
                             </h4>
                         </div>
@@ -402,7 +402,7 @@
             <div class="column">
                 <ul class="social-list">
                     <li class="social-list__item">
-                        <a href="#0" title="">
+                        <a href="https://www.facebook.com/AOCteensChurch" title="">
                             <span class="social-list__icon social-list__icon--facebook"></span>
                             <span class="social-list__text">Facebook</span>
                         </a>
@@ -414,13 +414,13 @@
                         </a>
                     </li>
                     <li class="social-list__item">
-                        <a href="#0" title="">
+                        <a href="https://www.instagram.com/ambassadors_of_christ_teens" title="">
                             <span class="social-list__icon social-list__icon--instagram"></span>
                             <span class="social-list__text">Instagram</span>
                         </a>
                     </li>
                     <li class="social-list__item">
-                        <a href="#0" title="">
+                        <a href="mailto:ambassadorsdominioncity@gmail.com" title="">
                             <span class="social-list__icon social-list__icon--email"></span>
                             <span class="social-list__text">Email</span>
                         </a>
@@ -440,7 +440,7 @@
             <div class="column large-4 medium-5 tab-full">
                 <div class="footer-logo">
                     <a class="site-footer-logo" href="index.html">
-                        <img src="{% static 'images/logo.svg' %}" alt="Homepage">
+                        <img src="{% static 'images/aoc-logo1.svg' %}" alt="Homepage">
                     </a>
                 </div>  <!-- footer-logo -->
                 <p>
@@ -454,13 +454,13 @@
                     <div class="column large-7 medium-full">
                         <h4 class="h6">Our Location</h4>
                         <p>
-                        56 Ijesha Roda <br>
+                        56 Ijesha Road<br>
                         Itire/Ijesha, Surulere, Lagos <br>
                         100001 NIGERIA
                         </p>
         
                         <p>
-                        <a href="https://goo.gl/maps/bc7C7eYtSmnNs6216" target="_blank" class="btn btn--footer">Get Direction</a>
+                        <a href="https://www.google.com/maps/place/RCCG+Dominion+City/@6.5078323,3.3349405,21z/data=!4m17!1m10!3m9!1s0x103b8f3ec24422ff:0x779014efa88b964c!2sRCCG+Dominion+City!8m2!3d6.5078193!4d3.3350291!10e5!14m1!1BCgIgAQ!16s%2Fg%2F11lh5lp6ln!3m5!1s0x103b8f3ec24422ff:0x779014efa88b964c!8m2!3d6.5078193!4d3.3350291!16s%2Fg%2F11lh5lp6ln?authuser=0" target="_blank" class="btn btn--footer">Get Direction</a>
                         </p>
                     </div>
                     <div class="column large-5 medium-full">
@@ -480,8 +480,8 @@
 
         <div class="row footer-bottom">
             <div class="column ss-copyright">
-                <span>© Copyright AOC-TEENS-MEDIA</span> 
-                <span>Design by <a href="https://www.linkedin.com/">Ezimoha Obichukwu</a></span>
+                <span>© Copyright AOC-TEENS MEDIA 2023</span> 
+                <span>Design by <a href="https://ng.linkedin.com/in/ezimoha-obichukwu-a2bb721b7">Ezimoha Obichukwu</a></span>
             </div>
         </div> <!-- footer-bottom -->
 

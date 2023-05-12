@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
@@ -5,8 +6,8 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>Hesed - Volunteer</title>
-    <meta name="description" content="">
+    <title>AOC - {% url 'volunteer' %}</title>
+    <meta name="description" content="We Are The Rccg Ambassadors of Christ Teens Church">
     <meta name="author" content="">
 
     <!-- mobile specific metas
@@ -15,19 +16,19 @@
 
     <!-- CSS
     ================================================== -->
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
 
     <!-- script
     ================================================== -->
-    <script src="js/modernizr.js"></script>
+    <script src="{% static 'js/modernizr.js' %}"></script>
 
     <!-- favicons
     ================================================== -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'site.webmanifest' %}">
 
 </head>
 
@@ -49,17 +50,17 @@
     <header class="s-header">
 
         <div class="header-logo">
-            <a class="site-logo" href="index.html">
-                <img src="images/logo.svg" alt="Homepage">
+            <a class="site-logo" href="{% url 'home' %}">
+                <img src="{% static 'images/aoc-logo1.svg' %}" alt="Homepage">
             </a>
         </div>
 
         <nav class="header-nav-wrap">
             <ul class="header-nav">
-                <li><a href="index.html" title="Home">Home</a></li>
-                <li><a href="about.html" title="About">About</a></li>
-                <li><a href="events.html" title="Services">Events</a></li>
-                <li><a href="contact.html" title="Contact us">Contact</a></li>	
+                <li><a href="{% url 'home' %}" title="Home">Home</a></li>
+                <li><a href="{% url 'about' %}" title="About">About</a></li>
+                <li><a href="{% url 'event' %}" title="Services">Events</a></li>
+                <li><a href="{% url 'contact' %}" title="Contact us">Contact</a></li>	
             </ul>
         </nav>
 
@@ -284,7 +285,7 @@
             <div class="column">
                 <ul class="social-list">
                     <li class="social-list__item">
-                        <a href="#0" title="">
+                        <a href="https://www.facebook.com/AOCteensChurch" title="">
                             <span class="social-list__icon social-list__icon--facebook"></span>
                             <span class="social-list__text">Facebook</span>
                         </a>
@@ -296,13 +297,13 @@
                         </a>
                     </li>
                     <li class="social-list__item">
-                        <a href="#0" title="">
+                        <a href="https://www.instagram.com/ambassadors_of_christ_teens" title="">
                             <span class="social-list__icon social-list__icon--instagram"></span>
                             <span class="social-list__text">Instagram</span>
                         </a>
                     </li>
                     <li class="social-list__item">
-                        <a href="#0" title="">
+                        <a href="mailto:ambassadorsdominioncit@gmail.com" title="">
                             <span class="social-list__icon social-list__icon--email"></span>
                             <span class="social-list__text">Email</span>
                         </a>
@@ -321,8 +322,8 @@
         <div class="row footer-top">
             <div class="column large-4 medium-5 tab-full">
                 <div class="footer-logo">
-                    <a class="site-footer-logo" href="index.html">
-                        <img src="images/logo.svg" alt="Homepage">
+                    <a class="site-footer-logo" href="{% url 'home' %}">
+                        <img src="{% static 'images/aoc-logo1.svg' %}" alt="Homepage">
                     </a>
                 </div>  <!-- footer-logo -->
                 <p>
@@ -336,24 +337,24 @@
                     <div class="column large-7 medium-full">
                         <h4 class="h6">Our Location</h4>
                         <p>
-                        1600 Amphitheatre Parkway <br>
-                        Mountain View, California <br>
-                        94043 US
+                        56 Ijesha Road <br>
+                        Itire/Ijesha, Surulere, Lagos<br>
+                        100001 NIGERIA
                         </p>
         
                         <p>
-                        <a href="https://goo.gl/maps/bc7C7eYtSmnNs6216" target="_blank" class="btn btn--footer">Get Direction</a>
+                        <a href="https://www.google.com/maps/place/RCCG+Dominion+City/@6.5078323,3.3349405,21z/data=!4m17!1m10!3m9!1s0x103b8f3ec24422ff:0x779014efa88b964c!2sRCCG+Dominion+City!8m2!3d6.5078193!4d3.3350291!10e5!14m1!1BCgIgAQ!16s%2Fg%2F11lh5lp6ln!3m5!1s0x103b8f3ec24422ff:0x779014efa88b964c!8m2!3d6.5078193!4d3.3350291!16s%2Fg%2F11lh5lp6ln?authuser=0" target="_blank" class="btn btn--footer">Get Direction</a>
                         </p>
                     </div>
                     <div class="column large-5 medium-full">
                         <h4 class="h6">Quick Links</h4>
                         <ul class="footer-list">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="volunteer.html">Volunteer</a></li>
-                            <li><a href="connect-group.html">Connect Groups</a></li>
-                            <li><a href="events.html">Upcoming Events</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="{% url 'home' %}">Home</a></li>
+                            <li><a href="{% url 'about' %}">About</a></li>
+                            <li><a href="{% url 'volunteer' %}">Volunteer</a></li>
+                            <li><a href="{% url 'connect-group' %}">Connect Groups</a></li>
+                            <li><a href="{% url 'event' %}">Upcoming Events</a></li>
+                            <li><a href="{% url 'contact' %}">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -362,8 +363,8 @@
 
         <div class="row footer-bottom">
             <div class="column ss-copyright">
-                <span>© Copyright Hesed 2019</span> 
-                <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+                <span>© Copyright AOC TEENS MEDIA 2023.</span> 
+                <span>Design by <a href="https://ng.linkedin.com/in/ezimoha-obichukwu-a2bb721b7">Ezimoha Obichukwu</a></span>
             </div>
         </div> <!-- footer-bottom -->
 
@@ -378,8 +379,8 @@
 
     <!-- Java Script
     ================================================== -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+    <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'js/plugins.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
 
 </body>
